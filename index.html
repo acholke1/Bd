@@ -36,4 +36,4 @@ function finish(){stage.innerHTML="<h1 style='opacity:1;font-size:64px'>🎉 HAP
 const x=c.getContext('2d');function R(){c.width=innerWidth;c.height=innerHeight}R();onresize=R;
 let p=[...Array(140)].map(()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:2+Math.random()*4,v:1+Math.random()*2,h:Math.random()*360}));
 (function a(){x.clearRect(0,0,c.width,c.height);p.forEach(o=>{x.fillStyle=`hsl(${o.h},100%,60%)`;x.beginPath();x.arc(o.x,o.y,o.r,0,7);x.fill();o.y+=o.v;if(o.y>innerHeight)o.y=-5;});requestAnimationFrame(a)})();
-</script></body></html>
+</script></body></html> 
